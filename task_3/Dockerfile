@@ -88,6 +88,8 @@ RUN cd \
 RUN cd \
     && mkdir working_directory
 
+RUN apt install libmosquitto-dev mosquitto mosquitto-clients
+
 COPY . ./working_directory
 
 RUN cd working_directory/ \
